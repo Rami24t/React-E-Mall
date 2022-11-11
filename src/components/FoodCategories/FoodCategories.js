@@ -2,7 +2,7 @@ import React from "react";
 import DishCard from "../../components/DishCard/DishCard";
 import { MDBRow } from "mdb-react-ui-kit";
 
-const FoodCategories = () => {
+const FoodCategories = ({clicked}) => {
   const categories = [
     {
       idCategory: "12",
@@ -69,6 +69,7 @@ const FoodCategories = () => {
     <MDBRow className="row-cols-1 row-cols-md-3 g-4">
       {categories.map((cat, idx) => (
         <DishCard
+           clicked={()=>clicked(cat.strCategory)}
           key={idx}
           title={cat.strCategory}
           img={cat.strCategoryThumb}

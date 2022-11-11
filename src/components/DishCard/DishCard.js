@@ -8,8 +8,9 @@ import {
   MDBCol
 } from 'mdb-react-ui-kit';
 
-export default function App({title,p, img}) {
+export default function App({title,p, img,clicked}) {
   return (
+    <div onClick={clicked}>
       <MDBCol>
         <MDBCard className='h-100'>
           <MDBCardImage
@@ -25,5 +26,6 @@ export default function App({title,p, img}) {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
+      </div>
   );
 }
