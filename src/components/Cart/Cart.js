@@ -29,7 +29,6 @@ function ccyFormat(num) {
     const invoiceTaxes = TAX_RATE * invoiceSubtotal;
     const invoiceTotal = invoiceTaxes + invoiceSubtotal;
     
-    console.log('HI, ');
   return (
     <TableContainer component={Paper}>
       <Table aria-label="spanning table">
