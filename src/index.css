@@ -3,18 +3,19 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0%;
+  padding: 0%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#FB7BA2,#FCE043);
+  font-size: 1.1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div,p{
+  font-family: 'Barlow Semi Condensed', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: large;
 }
-body {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+
+.active{
+  color: rgb(30, 30, 30) !important;
 }

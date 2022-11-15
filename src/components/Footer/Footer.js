@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import Modal from '../Modal/Modal';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-
+import { Link } from 'react-router-dom';
 
 const Footer = ({page}) => {    
   const [optSmModal, setOptSmModal] = useState(false);
@@ -29,7 +29,7 @@ const Footer = ({page}) => {
             <MDBIcon color='secondary' fab icon='instagram' />
           </a>
           <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='linkedin' />
+            <MDBIcon color='secondary' fab icon='Linkedin' />
           </a>
           <a href='' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='github' />
@@ -52,14 +52,14 @@ const Footer = ({page}) => {
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>E-Stores open now</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to='/restaurant' className='text-reset'>
                   IRT Online Restaurant
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to='/eshop' className='text-reset'>
                 Our E-Shop
-                </a>
+                </Link>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
@@ -67,14 +67,14 @@ const Footer = ({page}) => {
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to='/' className='text-reset'>
                   Main Entrance
-                </a>
+                </Link>
               </p>
             </MDBCol>
 
             <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Useful Links</h6>
               <p>
                 <a href='#!' className='text-reset'>
                   Pricing
@@ -119,16 +119,13 @@ const Footer = ({page}) => {
       </section>
 
       <div onClick={toggleShow} className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-      <p>{page} page by <a href="#r">Rami Al-Saadi</a> 2022 &copy;  - Project by <a href="#i">Izabela</a>, <a href="#t">Rami</a>, and <a href="#t">Thilina</a></p>
-        <p className='text-reset fw-bold'>
+      <p className='text-reset fw-bold'>{page} page by <a href="#r">Rami Al-Saadi</a> 2022 &copy;  - Project by <a href="#i">Izabela</a>, <a href="#t">Rami</a>, and <a href="#t">Thilina</a></p>
+        {/* <p className='text-reset fw-bold'>
           Rami Al-Saadi
-        </p>
+        </p> */}
       </div>
     
-
-
-<Modal page={page} optSmModal={optSmModal} toggleShow={toggleShow} setOptSmModal={setOptSmModal}>
-</Modal>
+<Modal page={page} optSmModal={optSmModal} toggleShow={toggleShow} setOptSmModal={setOptSmModal} />
 </MDBFooter>
 </footer>
   )
