@@ -34,7 +34,7 @@ const EMall = () => {
           <Link to={'/restaurant'} className='text-center transition duration-200  blur-[0.1vw] hover:blur-0'>
           <video className='rounded w-[100%]' src={restVid} muted autoPlay loop>
           </video>
-          <p className='pointer-events-none font-bold absolute top-16 opacity-80 text-[150%] left-36 text-[#f3efa3] z-10 text-center'>Enter Restaurant</p>
+          <p className=' pointer-events-none font-bold absolute top-16 opacity-80 text-4xl left-36 text-[#f3efa3] z-10 text-center'>Enter Restaurant</p>
           </Link>
         </div>
         <div className='relative p-[1px]  min-w-[40%]  rounded' 
@@ -44,7 +44,7 @@ const EMall = () => {
     >
           <a href="#rs" className='w-[100%] inline-block text-center hover:opacity-90 blur-[0.1vw] hover:blur-0 transition duration-200'>
          <video className='rounded w-[100%]' src={recordsVid} muted autoPlay loop></video>
-         <p className='font-bold pointer-events-none absolute top-16 opacity-80 text-[150%] left-36 text-[#f3efa3] z-10 text-center'>Records Store </p>
+         <p className='font-bold pointer-events-none absolute top-16 opacity-80 text-4xl left-36 text-[#f3efa3] z-10 text-center'>Records Store </p>
         </a>
         </div>
       </main>
