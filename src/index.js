@@ -26,6 +26,7 @@ root.render(
             <Route path="EShop" element={<EShop />} />
             <Route path="Records" element={<RecordsStore />} />
           </Route>
+          <Route path="*" element={<Layout />} />
         </Routes>
       </BrowserRouter>
     </ContextProvider>
