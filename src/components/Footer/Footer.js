@@ -16,22 +16,22 @@ const Footer = ({page}) => {
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
+          <a href='#!' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='facebook-f' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#!' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='twitter' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#!' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='google' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#!' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='instagram' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#!' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='Linkedin' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='#!' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='github' />
           </a>
         </div>
@@ -62,9 +62,9 @@ const Footer = ({page}) => {
                 </Link>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <Link to='/records' className='text-reset'>
                   The Records Store
-                </a>
+                </Link>
               </p>
               <p>
                 <Link to='/' className='text-reset'>

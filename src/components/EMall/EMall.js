@@ -42,10 +42,10 @@ const EMall = () => {
     // backgroundPosition: 'center bottom', backgroundBlendMode: 'multiply'
     // }}
     >
-          <a href="#rs" className='w-[100%] inline-block text-center hover:opacity-90 blur-[0.1vw] hover:blur-0 transition duration-200'>
+          <Link to="/records" className='w-[100%] inline-block text-center hover:opacity-90 blur-[0.1vw] hover:blur-0 transition duration-200'>
          <video className='rounded w-[100%]' src={recordsVid} muted autoPlay loop></video>
          <p className='font-bold pointer-events-none absolute top-16 opacity-80 text-4xl left-36 text-[#f3efa3] z-10 text-center'>Records Store </p>
-        </a>
+        </Link>
         </div>
       </main>
       <Footer page={'E-Mall Landing '} />
