@@ -27,7 +27,6 @@ useEffect(() => {
 }, [])
 
 useEffect(() => {    
-   console.log(process.env.REACT_APP_RAPIDAPI_KEY);
     // const optionsC = {
     //     method: 'GET',
     //     params: {i: filter},
