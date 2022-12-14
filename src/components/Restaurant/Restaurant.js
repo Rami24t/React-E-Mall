@@ -27,17 +27,14 @@ useEffect(() => {
 }, [])
 
 useEffect(() => {    
-
+   console.log(process.env.REACT_APP_RAPIDAPI_KEY);
     // const optionsC = {
     //     method: 'GET',
     //     params: {i: filter},
     //     headers: {
-    //       'X-RapidAPI-Key': '5f10b51219msha63355e07f43b4ap16df82jsn9a16319e215f',
-    //       'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
     //     }
     //   };
     if(filter.length>1){
-        // let prc = (fetch('https://the-cocktail-db.p.rapidapi.com/filter.php',optionsC).then(prc=>prc.json()).then(console.log));
         let pr1= (fetch('https://www.themealdb.com/api/json/v1/1/search.php?s='+filter).then(pr1=>pr1.json()));
         let pr1b= (fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c='+filter).then(pr1b=>pr1b.json()));
         let pr2= fetch("https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr="+filter, {
@@ -45,7 +42,7 @@ useEffect(() => {
         headers :
         { 
             "x-rapidapi-host" : "edamam-food-and-grocery-database.p.rapidapi.com",
-            "x-rapidapi-key": "5f10b51219msha63355e07f43b4ap16df82jsn9a16319e215f"
+            "x-rapidapi-key": process.env.REACT_APP_RAPIDAPI_KEY
         }
     }).then(pr2=>pr2.json());
     Promise.all([pr1,pr2, pr1b])
