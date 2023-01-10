@@ -22,7 +22,7 @@ export default function App({optSmModal,setOptSmModal, toggleShow, page}) {
               <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
             </MDBModalHeader>
             <MDBModalBody>
-            <p> {page} page by <a href="#r">Rami Al-Saadi</a> 2022 &copy;  - Project by <a href="#i">Izabela</a>, <a href="#t">Rami</a>, and <a href="">Thilina</a> </p>
+            <p> {page} page by <a href="#r">Rami Al-Saadi</a> 2022 &copy;  - Project by <a href="#i">Izabela</a>, <a href="#r">Rami</a>, and <a href="#t">Thilina</a> </p>
 </MDBModalBody>
           </MDBModalContent>
         </MDBModalDialog>

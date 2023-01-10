@@ -46,7 +46,7 @@ const Footer = ({page}) => {
                 IRT E-Mall
               </h6>
               <p> A React.js Webdevelopment Project. <br /> 
-              {page} page by <a href="#r">Rami Al-Saadi</a> 2022 &copy;.   Project by <a href="#i">Izabela</a>, <a href="#t">Rami</a>, and <a href="#t">Thilina.</a></p>
+              {page} page by <a href="#r">Rami Al-Saadi</a> 2022 &copy;.   Project by <a href="#i">Izabela</a>, <a href="#r">Rami</a>, and <a href="#t">Thilina</a>.</p>
             </MDBCol>
 
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
@@ -119,7 +119,7 @@ const Footer = ({page}) => {
       </section>
 
       <div onClick={toggleShow} className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-      <p className='text-reset fw-bold'>{page} page by <a href="#r">Rami Al-Saadi</a> 2022 &copy;  - Project by <a href="#i">Izabela</a>, <a href="#t">Rami</a>, and <a href="#t">Thilina</a></p>
+      <p className='text-reset fw-bold'>{page} page by <a href="#r">Rami Al-Saadi</a> 2022 &copy;  - Project by <a href="#i">Izabela</a>, <a href="#r">Rami</a>, and <a href="#t">Thilina</a></p>
         {/* <p className='text-reset fw-bold'>
           Rami Al-Saadi
         </p> */}
