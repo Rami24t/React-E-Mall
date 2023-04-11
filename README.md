@@ -26,6 +26,13 @@ https://emallrestaurant.netlify.app/
 - It also includes a JavaScript credit card validation/guessing program
 - Your shopping cart will be reset after you successfull submit your information and place the order by clicking the 'Place Order' button
 
+##### Notes
+- Refreshing your page or even restarting your app or even your laptop/tablet/mobile will not lead you to lose any progress.
+All items that you added to your cart will still be there waiting for you even after a restart.
+- You do not have to worry about losing your progress by going from one step to the other and you can still go back to the selection page to select more items even after editing your order on the cart page.
+- Jumping from one page to the other is extremel fast and seamless
+- I am fetching the images and some other products' information/resources live from remote databases by using their relative APIs in order to retrieve those resources using the GET request method.
+
 ## Technologies and Languages 
 Some technologies and programming languages that I used used in the building of this project include:
 - JavaScript
