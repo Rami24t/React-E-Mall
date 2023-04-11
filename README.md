@@ -38,4 +38,4 @@ Some technologies and programming languages that I used used in the building of 
 
 
 ## Note:
-This project is a part of the E-Mall project which included a landing/routing website by Rami, an online restaurant by Rami, an online music shop by Izabella, and a music app by Thili.
+This project is a part of the E-Mall project which included a main landing/routing website by Rami, an online restaurant by Rami, an online music records shop by Izabella, and a music albums app by Thili.
