@@ -6,7 +6,7 @@ https://emallrestaurant.netlify.app/
 
 ## About 
 
-### IRT Restaurant / E-Restaurant is an online restaurant web app,
+### IRT Restaurant / E-Restaurant is an Online Restaurant Web Application
 
 #### Selection / Add to Cart Page:
 - On the first page you will be presented with a group of food categories and a search bar
