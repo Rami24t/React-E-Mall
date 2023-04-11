@@ -37,4 +37,5 @@ Some technologies and programming languages that I used used in the building of 
 - React Bootstrap
 
 
+### Note:
 This project is a part of the E-Mall project which included a landing/routing website by Rami, an online restaurant by Rami, an online music shop by Izabella, and a music app by Thili.
