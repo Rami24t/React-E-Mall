@@ -25,3 +25,16 @@ https://emallrestaurant.netlify.app/
 - Your location's city and ZIP may be automatically calculated
 - It also includes a JavaScript credit card validation/guessing program
 - Your shopping cart will be reset after you successfull submit your information and place the order by clicking the 'Place Order' button
+
+## Technologies and Languages 
+Some technologies and programming languages that I used used in the building of this project include:
+- JavaScript
+- JSX
+- Tailwind CSS
+- CSS3
+- HTML5
+- React JS
+- React Bootstrap
+
+
+This project is a part of the E-Mall project which included a landing/routing website by Rami, an online restaurant by Rami, an online music shop by Izabella, and a music app by Thili.
