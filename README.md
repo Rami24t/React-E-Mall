@@ -1,5 +1,5 @@
 # React-E-Mall - E-Restaurant
-A webdevelopment project built with Javascript, React, React Bootstrap, Tailwind, CSS3, and HTML5
+A webdevelopment project built with Javascript, React JS, JSX, React Bootstrap, Tailwind, CSS3, and HTML5
 
 ## Deployment and live demo link:
 https://emallrestaurant.netlify.app/
