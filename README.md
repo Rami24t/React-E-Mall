@@ -43,6 +43,13 @@ Some technologies and programming languages that I used used in the building of 
 - React JS
 - React Bootstrap
 
+## Snapshots
+![Screenshot 2023-05-15 at 19-12-52 IRT EMall E-Restaurant](https://github.com/Rami24t/React-E-Mall/assets/103028944/69ca7438-3171-482f-baab-6472518bb0dc)
+![Screenshot 2023-05-15 at 19-13-30 IRT EMall E-Restaurant](https://github.com/Rami24t/React-E-Mall/assets/103028944/1aba7ebd-b955-4e52-9a05-6368cc5fb818)
+![Screenshot 2023-05-15 at 19-14-07 IRT EMall E-Restaurant](https://github.com/Rami24t/React-E-Mall/assets/103028944/1087beab-d892-46fc-a821-e839829f1c1a)
+![Screenshot 2023-05-15 at 19-14-45 IRT EMall E-Restaurant](https://github.com/Rami24t/React-E-Mall/assets/103028944/11aa225c-d3aa-4ce3-b2ae-dca48bd55067)
+![Screenshot 2023-05-15 at 19-16-01 IRT EMall E-Restaurant](https://github.com/Rami24t/React-E-Mall/assets/103028944/bedbe1dc-714b-4049-a4b3-5b350ffbfa77)
+
 
 ## Note:
 This project is a part of the E-Mall project which included a main landing/routing website by Rami, an online restaurant by Rami, an online music records shop by Izabella, and a music albums app by Thili.
