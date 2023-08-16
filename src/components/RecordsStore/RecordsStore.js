@@ -6,7 +6,7 @@ import recImg from '../../assets/records1.jpeg';
 const RecordsStore = () => {
   return (
     <>
-    <Navbar />
+    <Navbar title={"Records"} />
     <main className="animate-pulse flex items-center justify-evenly h-[50vh] text-yellow-200 text-4xl" style = {{ backgroundImage:`url(${recImg}`, backgroundSize: 'cover', backgroundPosition: 'center center'}} >
     <a href='https://irtemallrecords.netlify.app/' title='Records Store by Izabela' className='text-reset text-center'>
       <h1 className='animate-bounce'>Our Records Store</h1>
