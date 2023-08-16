@@ -12,13 +12,46 @@ import { Link } from "react-router-dom";
 const Footer = ({ page }) => {
   const [optSmModal, setOptSmModal] = useState(false);
   const toggleShow = () => setOptSmModal(!optSmModal);
-  const footerCredits = (
-    <p className="text-reset fw-bold">
-      {page} page by <a href="https://www.linkedin.com/in/rami-al-saadi-16a14223a/">Rami Al-Saadi</a> 2022-
-      {new Date().getFullYear()} &copy; - Project by <a href="#i">Izabela</a>,{" "}
-      <a href="https://www.linkedin.com/in/rami-al-saadi-16a14223a/">Rami</a>, and <a href="https://www.linkedin.com/in/thilina-priyalal-punchi-hewage-57235a226/">Thilina</a>
-    </p>
-  );
+
+  const FooterCredits = () => {
+    const footerCreditsLinks = [
+      {
+        name: "Izabela",
+        link: "https://www.linkedin.com/in/izabela-koz%C5%82owska-1b1b3a1b9/",
+      },
+      {
+        name: "Rami",
+        link: "https://www.linkedin.com/in/rami-al-saadi-16a14223a/",
+      },
+      {
+        name: "Thilina",
+        link: "https://www.linkedin.com/in/thilina-priyalal-punchi-hewage-57235a226/",
+      },
+    ];
+
+    return (
+      <p className="text-reset fw-bold">
+        {page} page by{" "}
+        <a href="https://www.linkedin.com/in/rami-al-saadi-16a14223a/">
+          {" "}
+          Rami Al-Saadi{" "}
+        </a>{" "}
+        2022-{new Date().getFullYear()} &copy;
+        <br />
+        Project by{" "}
+        {footerCreditsLinks.map((link, index) => (
+          <a key={index} href={link.link} target="_blank" rel="noreferrer">
+            {link.name}
+            {index < footerCreditsLinks.length - 2
+              ? ", "
+              : index === footerCreditsLinks.length - 2
+              ? ", and "
+              : ""}
+          </a>
+        ))}
+      </p>
+    );
+  };
 
   const pageLinks = [
     {
@@ -85,7 +118,6 @@ const Footer = ({ page }) => {
     },
   ];
 
-
   return (
     <footer>
       <MDBFooter
@@ -99,7 +131,13 @@ const Footer = ({ page }) => {
 
           <div>
             {socialIconsLinks.map((link) => (
-              <a href={link.link} className="me-4 text-reset">
+              <a
+                href={link.link}
+                key={link.name}
+                target="_blank"
+                rel="noreferrer"
+                className="me-4 text-reset"
+              >
                 <MDBIcon color="secondary" fab icon={link.name} />
               </a>
             ))}
@@ -115,7 +153,7 @@ const Footer = ({ page }) => {
                   IRT E-Mall
                 </h6>
                 <p> A React.js Webdevelopment Project.</p>
-                {footerCredits}
+                <FooterCredits />
               </MDBCol>
 
               <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
@@ -176,7 +214,7 @@ const Footer = ({ page }) => {
           className="text-center p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
         >
-          {footerCredits}
+          <FooterCredits />
           {/* <p className='text-reset fw-bold'>
           Rami Al-Saadi
         </p> */}
@@ -187,7 +225,7 @@ const Footer = ({ page }) => {
           optSmModal={optSmModal}
           toggleShow={toggleShow}
           setOptSmModal={setOptSmModal}
-          text={footerCredits}
+          children=<FooterCredits />
         />
       </MDBFooter>
     </footer>
