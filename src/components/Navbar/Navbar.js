@@ -24,7 +24,7 @@ function Navbar({
   const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
 
   useEffect(() => {
-    document.title = title === "E-Mall" ? "E-Mall" : "E-Mall | " + title;
+    document.title = title === "E-Mall" ? "IRT E-Mall" : "IRT E-Mall | " + title;
   }, [title]);
 
   return (
