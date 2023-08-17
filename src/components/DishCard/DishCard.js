@@ -25,7 +25,7 @@ export default function App({title,p, img,clicked,mini, addOrder, cat,price,key2
           {!mini ? 
           <MDBCardBody>
             <MDBCardTitle>{title}</MDBCardTitle>
-            <MDBCardText>
+            <MDBCardText className='text-sm'>
                 {p?.toString()} {p && price ? '-:-' : ''} {price ? `Price: ${price?.toString()}€` : ''} 
             </MDBCardText>
           </MDBCardBody>
